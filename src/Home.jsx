@@ -36,6 +36,7 @@ export function Home() {
           </section>
         </div>
       </div>
+      <hr></hr>
       <Skills />
     </>
   );

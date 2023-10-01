@@ -15,11 +15,11 @@
 
 }
 .vijay{
-    width: 300px;
+    width: 350px;
     position: absolute;
     z-index: 1;
     margin-left: 85%;
-    margin-top: -20%;
+    margin-top: -18%;
     border-radius: 20px;
     box-shadow: 5px 10px 20px #aaaaaa;
 
@@ -29,7 +29,7 @@
     z-index: 3;
     height: 300px;
     margin-left: 50%;
-    margin-top: -50px;
+    margin-top: 20px;
 
 }
 
@@ -78,7 +78,8 @@ section:before{
     width: 180px;
     height: 180px;
 }
-@media screen and (max-width: 500px) {
+
+@media screen and (max-width: 850px) {
     .home-content h4{     
         font-size: 20px;      
     }
@@ -133,14 +134,20 @@ section:before{
     .down-arrow{
         position: absolute;
         z-index: 3;
-        height: 180px;
-        margin-left: 28%;
-        margin-top: 100px;       
+        height: 100px;
+        margin-left: 40%;
+        margin-top: 120px;   
     
     }
    
 }
+@media only screen and (max-width: 415px){
+    .down-arrow{
+       display: none;
+    
+    }
 
+}
 
 
 hr{
@@ -172,7 +179,7 @@ hr{
     justify-content: center;
     align-items: center;
     gap: 80px;
-    max-width: 1000px;
+    max-width: 85%;
     flex-wrap: wrap;
     margin:  5% 0  5% 10%;
 
@@ -189,7 +196,7 @@ hr{
     object-fit: contain;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 850px) {
     .skills h4{
         color: #909090;
         max-width: 290px;

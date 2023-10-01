@@ -1,3 +1,5 @@
+import { Expedu } from "./Expedu";
+
 export function Skills() {
   return (
     <>
@@ -31,6 +33,7 @@ export function Skills() {
         </div>
       </div>
       <hr></hr>
+      <Expedu />
     </>
   );
 }
