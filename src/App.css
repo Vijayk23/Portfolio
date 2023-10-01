@@ -379,44 +379,44 @@ gap: 60px;
     .download-btn{
         margin: 20px;
     }
-    .per-flex{
-        gap: 100px;
-     
-    }
-    .personal section{
-        height: 80vh; 
-    }
+
+  
     .per-flex{
         display: flex;
       flex-wrap: wrap;
-     
-    }
+      gap: 50px;
 
+    }
+    .personal section{    
+        width: 80%;
+        background: #fbd6d9;
+        padding: 40px 0 0 50px;
+        height: 80vh; 
+        position: relative;
+
+    }
 
 }
 @media screen and (max-width: 400px) {
   
-    .per-flex{
-        gap: 200px;
-    }
-    section{
-        position: relative;
-        width: 85%;
-        height: 90vh;
-        background: #F0F1FC;
-      
-    }
+   
     .personal section{
-        position: absolute;
-
+        position: relative;
+        width: 80%;
         height: 80vh;
+        background: #fbd6d9;
+        padding: 40px 0 0 50px;
+
+      
     }
     .per-flex{
         display: flex;
       flex-wrap: wrap;
+      gap: 140px;
+
      
     }
-
+  
 
 }
 
