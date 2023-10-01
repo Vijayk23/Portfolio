@@ -1,3 +1,5 @@
+import { Personal } from "./Personal";
+
 export function Expedu() {
   const experience = [
     {
@@ -32,22 +34,26 @@ export function Expedu() {
     },
   ];
   return (
-    <div className="exp-edu">
-      <div>
-        <h3 className="expedu">EXPERIENCE & EDUCATION</h3>
-      </div>
-      <div className="exp1">
-        {experience.map((exp) => (
-          <Experien exper={exp} />
-        ))}
-      </div>
+    <>
+      <div className="exp-edu">
+        <div>
+          <h3 className="expedu">EXPERIENCE & EDUCATION</h3>
+        </div>
+        <div className="exp1">
+          {experience.map((exp) => (
+            <Experien exper={exp} />
+          ))}
+        </div>
 
-      <div className="exp1">
-        {education.map((edu) => (
-          <Exduca educ={edu} />
-        ))}
+        <div className="exp1">
+          {education.map((edu) => (
+            <Exduca educ={edu} />
+          ))}
+        </div>
       </div>
-    </div>
+      <br></br>
+      <Personal />
+    </>
   );
 }
 

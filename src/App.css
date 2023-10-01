@@ -34,14 +34,14 @@
 }
 
 
-.home-container section{
+ section{
     position: relative;
     width: 85%;
     height: 90vh;
     background: #F0F1FC;
   
 }
-.home-container section:before{
+ section:before{
 
     content: '';
     position: absolute;
@@ -98,14 +98,14 @@
         width: 120px;
         height: 120px;
     }
-    section{
+     section{
         position: relative;
         width: 100%;
         height: 80vh;
         background: #F0F1FC;
       
     }
-    section:before{
+     section:before{
     
         content: '';
         position: absolute;
@@ -226,6 +226,11 @@ hr{
         height: 60px;
         object-fit: contain;
     }
+    .personal section{    
+        width: 95%;
+        background: #fbd6d9;  
+    }
+    
   
 }
 
@@ -305,6 +310,113 @@ gap: 60px;
     line-height: 30px;
     background-color: #8685DE;
     border-radius: 0 0px 20px 20px;
+}
+
+.personal section{    
+    width: 90%;
+    background: #fbd6d9;
+    padding: 80px 0 0 80px;
+  
+}
+
+.personal h2{
+    padding: 20px;
+}
+.per-flex span p{
+    padding: 15px 20px;
+    color: #373737c4;
+    line-height: 25px;
+    font-weight: 700 ;
+    font-size: 15px;
+
+}
+.personal p span{
+    color: #05004A;
+    letter-spacing: 1px;
+}
+
+.download-btn{
+    border-radius: 12px;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: 800 ;
+    color:#8685DE ;
+    letter-spacing: 1.5px;
+    border: none;
+    box-shadow: 5px 10px 20px #aaaaaa;
+    margin: 25px;
+}
+.card{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    max-width: 730px;
+}
+.card-container{
+    width: 300px;
+    height: 200px;
+    box-shadow: 5px 10px 20px #aaaaaa;
+    border-radius: 20px;
+    background-color: #ffffff;
+}
+.per-flex{
+    display: flex;
+    gap: 300px;
+ 
+}
+#cardline1{
+    color: #05004A;
+    font-size: 30px;
+    padding: 30px;
+}
+#cardline2{
+    font-size: 15px;
+    padding-left: 50px;
+    line-height: 25px;
+
+}
+@media screen and (max-width: 850px) {
+    .download-btn{
+        margin: 20px;
+    }
+    .per-flex{
+        gap: 100px;
+     
+    }
+    .personal section{
+        height: 80vh; 
+    }
+    .per-flex{
+        display: flex;
+      flex-wrap: wrap;
+     
+    }
 
 
 }
+@media screen and (max-width: 400px) {
+  
+    .per-flex{
+        gap: 200px;
+    }
+    section{
+        position: relative;
+        width: 85%;
+        height: 90vh;
+        background: #F0F1FC;
+      
+    }
+    .personal section{
+        position: absolute;
+
+        height: 80vh;
+    }
+    .per-flex{
+        display: flex;
+      flex-wrap: wrap;
+     
+    }
+
+
+}
+
