@@ -34,14 +34,14 @@
 }
 
 
-section{
+.home-container section{
     position: relative;
     width: 85%;
     height: 90vh;
     background: #F0F1FC;
   
 }
-section:before{
+.home-container section:before{
 
     content: '';
     position: absolute;
@@ -152,19 +152,20 @@ section:before{
 
 hr{
     width: 4%;
-    margin-left: 50%;
+    margin-left: 48%;
     color: #05004A;
     border: 1px solid;
     margin-bottom: 50px;
     margin-top: 10px;
 }
-.skills h3{
+.skills h3 , .expedu{
     text-align: center;
     color: #05004A;
     margin-bottom: 30px;
 
 
 }
+
 .skills h4{
     color: #909090;
     max-width: 90%;
@@ -226,4 +227,84 @@ hr{
         object-fit: contain;
     }
   
+}
+
+.exp-card, .edu-card{
+   
+    box-shadow: 5px 10px 15px #aaaaaa;
+    border-radius: 20px;
+    
+}
+.workpng{
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    padding: 1%;
+}
+.exp1{
+display: flex;
+align-items: center;
+justify-content: center;
+margin: 3%;
+gap: 60px;
+
+
+}
+@media screen and (max-width: 500px){
+  .exp1{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 8%;
+ 
+  }
+    
+}
+.exp{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    background-color: #D4FEF7;
+    border-radius: 20px;
+    color: #05004A;
+    font-weight: 600;
+    padding: 5px;
+ 
+  
+}
+.edu1{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    color: #05004A;
+    font-weight: 600;
+
+}
+.exp-year{
+    color: #05004A;
+    font-weight: 600;
+  
+}
+.exp-company{
+    padding: 20px;
+    font-weight: 900;
+    color: #5e5e5e;
+}
+.exp-role{
+    color: #8685DE;
+}
+.exp-description{
+    padding: 10px 20px;
+    text-align: justify;
+    color: #5e5e5e;
+    line-height: 30px;
+}
+.edu-description{
+    padding: 10px 20px;
+    text-align: justify;
+    color: #ffffff;
+    line-height: 30px;
+    background-color: #8685DE;
+    border-radius: 0 0px 20px 20px;
+
+
 }
