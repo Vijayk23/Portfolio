@@ -400,6 +400,11 @@ gap: 60px;
         position: relative;
 
     }
+    .personal section:before{
+
+       height: 150px
+      
+    }
    
     .projects-card{ 
         padding: 0px;
@@ -471,6 +476,12 @@ gap: 60px;
         height: 75vh;
         background: #fbd6d9;   
     }
+    .personal section:before{
+
+        height: 150px
+       
+     }
+    
     .card{
         display: flex;
         gap: 10px;
