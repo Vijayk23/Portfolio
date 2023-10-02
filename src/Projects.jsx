@@ -1,5 +1,6 @@
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import { Contact } from "./Contact";
 
 export function Projects() {
   const responsive = {
@@ -76,12 +77,13 @@ export function Projects() {
           responsive={responsive}
           className="projects-card"
         >
-          {projects.map((pro) => (
+          {projects.map((pro, index) => (
             <Project proj={pro} />
           ))}
         </Carousel>
       </div>
       <br></br>
+      <Contact />
     </>
   );
 }

@@ -570,7 +570,7 @@ gap: 60px;
     margin-top: 50px;
     font-size: 13px;
     font-weight: 800 ;
-    color:#D4FEF7 ;
+    color:#ffffff ;
     letter-spacing: 1px;
     border: none;
     box-shadow: 0px 10px 20px #aaaaaa;
@@ -582,4 +582,220 @@ gap: 60px;
 }
 .projects-card{
     padding: 60px;
+}
+
+.contact h2{
+    color: #05004A;
+    padding: 10px;
+}
+.cont-para{
+    padding: 20px;
+    color: #fff;
+    text-align: justify;
+   width: 60%;
+   font-size: 16px;
+}
+.contact-content img{
+    width: 70px;
+    height: 70px
+}
+.img-title{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #05004A;
+    font-size: 18px;
+}
+.contact-line{
+    padding: 0px 0 30px 80px;
+    margin-top: -15px;
+    color: #ffffff;
+
+}
+.form{
+    background-color: #ffffff;
+    padding: 50px 50px 20px 50px;
+    border-radius: 50px 30px 30px 50px;
+}
+.contact{
+    display: flex;
+    align-items: center;
+    
+}
+.contact span{
+    width: 50%;
+
+}
+.contact{
+    background-color: #949DFD;
+    border-radius: 30px;
+    margin: 50px 20px 10px 20px;
+    box-shadow: 5px 20px 20px 10px #dcdcdc;
+}
+.form h4{
+    font-size: 23px;
+    color: #05004A;
+    padding: 20px;
+}
+.form input{
+    border: none;
+    border-bottom: 1px solid #C2C2C2;
+    width: 550px;
+    padding: 10px;
+    margin: 10px;
+    font-size: 18px;
+    height: 40px;
+    
+
+}
+.form input::placeholder {
+    color: #C2C2C2; 
+    font-size: 15px;
+
+  }
+  .form  input:focus{
+    outline: none;
+  }
+
+  .contact span{
+    padding: 75px;
+  }
+  .form button{
+    border-radius: 10px;
+    padding: 15px;
+    font-size: 13px;
+    font-weight: 800 ;
+    color:#ffffff ;
+    letter-spacing: 1px;
+    border: none;
+    box-shadow: 0px 10px 20px #ffffff;
+    cursor: pointer;
+    margin: 25px 0 25px 0px;
+    background-color: #949DFD;
+    width: 50%;
+  }
+  .social{
+    width: 480px;
+    padding-top:30px;
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+  }
+  .social img{
+    padding: 5px;
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+    border:1px solid #C2C2C2;
+    border-radius: 40px;
+  }
+  @media screen and (max-width: 850px) {
+
+    .contact{
+        display: flex;
+        flex-wrap: wrap;
+      
+        
+    }
+    .social{
+        width: 100%;
+      }
+      .form input{
+        width: 100%; 
+    }
+    .form {
+        margin: 20px;
+        border-radius: 30px;
+        padding: 54px;
+    
+    }
+    .contact h2{
+        text-align: center;
+        font-size: 20px;
+        width: 100%;
+    }
+    .contact span{
+        padding: 30px;
+    }
+    .cont-para{
+       
+       width: 270px;
+       font-size: 15px;
+       text-align: justify;
+       
+    }
+    .img-title{
+        font-size: 20px;
+        width: 250px;
+    
+    }
+    .contact-line{
+        padding-left: 80px;
+        margin-top: -15px;
+        width: 250px;
+       
+    
+    }
+    .form button{
+        width: 80%;
+      }
+
+
+}
+@media screen and (max-width: 400px) {
+  
+  .contact{
+    display: flex;
+    flex-wrap: wrap;
+  
+    
+}
+.social{
+    width: 100%;
+  }
+  .form input{
+    width: 100%; 
+}
+.form {
+    margin: 10px;
+    border-radius: 30px;
+    padding: 54px;
+
+}
+.contact h2{
+    text-align: center;
+    font-size: 20px;
+    width: 100%;
+}
+.contact span{
+    padding: 30px;
+}
+.cont-para{
+   
+   width: 250px;
+   font-size: 15px;
+   text-align: justify;
+   
+}
+.img-title{
+    font-size: 20px;
+    width: 250px;
+
+}
+.contact-line{
+    padding-left: 80px;
+    margin-top: -15px;
+    width: 250px;
+   
+
+}
+.form button{
+    width: 80%;
+  }
+ 
+}
+.copyright{
+    font-size: 8px;
+    padding: 20px 0 0 0;
+    text-align: start;
 }

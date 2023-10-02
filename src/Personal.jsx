@@ -45,6 +45,7 @@ export function Personal() {
       </div>
       <hr></hr>
       <Projects />
+      <br></br>
     </>
   );
 }
