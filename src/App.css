@@ -158,10 +158,11 @@ hr{
     margin-bottom: 50px;
     margin-top: 10px;
 }
-.skills h3 , .expedu{
+.skills h3 , .expedu, .proj-title{
     text-align: center;
     color: #05004A;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+    padding: 20px;
 
 
 }
@@ -313,17 +314,24 @@ gap: 60px;
 }
 
 .personal section{    
-    width: 90%;
-    background: #fbd6d9;
-    padding: 80px 0 0 80px;
-  
+    width: 95%;
+    height: 96vh;
+    background: #ffe7e9; 
+     
 }
+/* .personal section:before{
+    height: 200px;
+    background: #ffffff;
+    clip-path: polygon(0 100%, 0% 50%, 100% 100%);
+} */
+
 
 .personal h2{
-    padding: 20px;
+    font-size: 20px;
+   padding: 25px;
 }
 .per-flex span p{
-    padding: 15px 20px;
+    padding: 10px 0px 10px 30px;
     color: #373737c4;
     line-height: 25px;
     font-weight: 700 ;
@@ -336,15 +344,20 @@ gap: 60px;
 }
 
 .download-btn{
-    border-radius: 12px;
-    padding: 10px;
-    font-size: 15px;
+    border-radius: 10px;
+    padding: 12px;
+    font-size: 13px;
     font-weight: 800 ;
     color:#8685DE ;
-    letter-spacing: 1.5px;
+    letter-spacing: 1px;
     border: none;
-    box-shadow: 5px 10px 20px #aaaaaa;
-    margin: 25px;
+    box-shadow: 0px 10px 20px #aaaaaa;
+    cursor: pointer;
+    margin: 25px 0 25px 25px;
+}
+.personal-dotted{
+    width: 100px;
+    height: 100px;
 }
 .card{
     display: flex;
@@ -361,7 +374,10 @@ gap: 60px;
 }
 .per-flex{
     display: flex;
-    gap: 300px;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 100px;
+   
  
 }
 #cardline1{
@@ -376,47 +392,183 @@ gap: 60px;
 
 }
 @media screen and (max-width: 850px) {
-    .download-btn{
-        margin: 20px;
-    }
-
-  
-    .per-flex{
-        display: flex;
-      flex-wrap: wrap;
-      gap: 50px;
-
-    }
+    
     .personal section{    
-        width: 80%;
+        width: 100%;
         background: #fbd6d9;
-        padding: 40px 0 0 50px;
-        height: 80vh; 
+        height: 85vh; 
         position: relative;
 
     }
+   
+    .projects-card{ 
+        padding: 30px;
+    }
+    .card{
+        display: flex;
+        gap: 10px;
+        max-width: 253px;
+        margin-top: -90px
+      
+    }
+    .card-container{
+        width: 120px;
+        height: 100px;
+        box-shadow: 5px 10px 20px #aaaaaa;
+        border-radius: 20px;
+        background-color: #ffffff;
+    }
+    #cardline1{
+        color: #05004A;
+        font-size: 20px;
+        padding: 9px;
+    }
+    #cardline2{
+        font-size: 10px;
+        padding-left: 25px;
+        line-height: 12px;
+    
+    }
+    .per-flex{
+        display: flex;
+        flex-direction: column;  
+        max-width: 500px;   
+        gap:0
+     
+    }
+    .personal h2{
+        font-size: 15px;
+       padding: 25px;
+    }
+    .per-flex span p{
+        font-size: 10px;
+        line-height: 2px;    
+    }
+    .personal p span{
+        color: #05004A;
+        letter-spacing: 1px;
+    }
+    
+    .download-btn{
+        padding: 10px;
+        font-size: 10px;
+        margin: 25px 0 10px 25px;
+    }
+  
+    
+
+  
 
 }
 @media screen and (max-width: 400px) {
   
-   
+    .projects-card{
+        padding: 20px;
+    }
     .personal section{
         position: relative;
-        width: 80%;
-        height: 80vh;
-        background: #fbd6d9;
-        padding: 40px 0 0 50px;
-
+        width: 100%;
+        height: 75vh;
+        background: #fbd6d9;   
+    }
+    .card{
+        display: flex;
+        gap: 10px;
+        max-width: 243px;
+        margin-top: -80px
       
+    }
+    .card-container{
+        width: 110px;
+        height: 100px;
+        box-shadow: 5px 10px 20px #aaaaaa;
+        border-radius: 20px;
+        background-color: #ffffff;
+    }
+    #cardline1{
+        color: #05004A;
+        font-size: 20px;
+        padding: 9px;
+    }
+    #cardline2{
+        font-size: 10px;
+        padding-left: 25px;
+        line-height: 12px;
+    
     }
     .per-flex{
         display: flex;
-      flex-wrap: wrap;
-      gap: 140px;
-
+        flex-direction: column;  
+        max-width: 500px;   
+        gap:0
      
     }
-  
+    .personal h2{
+        font-size: 15px;
+       padding: 25px;
+    }
+    .per-flex span p{
+        font-size: 10px;
+        line-height: 2px;    
+    }
+    .personal p span{
+        color: #05004A;
+        letter-spacing: 1px;
+    }
+    
+    .download-btn{
+        padding: 10px;
+        font-size: 10px;
+        margin: 25px 0 10px 25px;
+    }
+
 
 }
 
+.project-conatiner{
+ 
+    box-shadow: 10px 10px 10px #aaaaaa;
+    width: 300px;
+    height: auto;
+    border-radius: 20px;
+}
+
+.project-img{
+    width:100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+
+}
+.project-name{
+    font-size: 18px;
+    padding: 20px;
+    letter-spacing: 2px;
+    color: #8685DE;
+}
+.project-des{
+    width: 85%;
+    height: 95px;
+    text-align: justify;
+    padding: 5px 20px 20px 20px;
+    line-height: 25px;
+    color: #5e5e5e;
+  }
+ .project-button{
+    border-radius: 0px 0px  20px 20px;
+    margin-top: 50px;
+    font-size: 13px;
+    font-weight: 800 ;
+    color:#D4FEF7 ;
+    letter-spacing: 1px;
+    border: none;
+    box-shadow: 0px 10px 20px #aaaaaa;
+    cursor: pointer;
+    width: 100%;
+    height: 40px;
+    background-color: #8685DE;
+    
+}
+.projects-card{
+    padding: 60px;
+}

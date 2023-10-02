@@ -27,25 +27,30 @@ export function Workexperience() {
   ];
 
   return (
-    <div className="card">
-      {works.map((card) => (
-        <Work work={card} />
-      ))}
-    </div>
+    <>
+      <div className="card">
+        {works.map((card) => (
+          <Work work={card} />
+        ))}
+      </div>
+      <div></div>
+    </>
   );
 }
 
 function Work({ work }) {
   return (
-    <div className="card-container">
-      <p id="cardline1">
-        {work.num}
-        <sup>{work.plus}</sup>
-      </p>
-      <div id="cardline2">
-        <p> {work.title1}</p>
-        <p> {work.title2}</p>
+    <>
+      <div className="card-container">
+        <p id="cardline1">
+          {work.num}
+          <sup>{work.plus}</sup>
+        </p>
+        <div id="cardline2">
+          <p> {work.title1}</p>
+          <p> {work.title2}</p>
+        </div>
       </div>
-    </div>
+    </>
   );
 }

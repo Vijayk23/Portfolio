@@ -1,4 +1,5 @@
 import { Workexperience } from "./Workexperience";
+import { Projects } from "./Projects";
 
 export function Personal() {
   return (
@@ -23,24 +24,27 @@ export function Personal() {
               <p>
                 PHONE: <span>7010993660</span>
               </p>
-
+              <p>
+                MAIL ID: <span>VIJAYSACHINVIJ23@GMAIL.COM</span>
+              </p>
               <a download href="./images/VIJAY.pdf">
                 <button className="download-btn">DOWNLOAD CV ↓</button>
-              </a>
-
+              </a>{" "}
+              <br></br>
               <img
                 src="./images/dotted.png"
                 alt="dotted image"
                 className="home-dotted"
               />
             </span>
-
             <div>
               <Workexperience />{" "}
             </div>
           </div>
         </section>
       </div>
+      <hr></hr>
+      <Projects />
     </>
   );
 }
