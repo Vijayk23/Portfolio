@@ -96,13 +96,10 @@ export function Home() {
               />
             </div>
             <div>
-              <motion.img
+              <img
                 src="./images/arrow.png"
                 alt="arrow"
                 className="down-arrow"
-                variants={arrow}
-                initial="hidden"
-                animate="visible"
               />
             </div>
             <div>
