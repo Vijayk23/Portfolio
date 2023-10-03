@@ -11,7 +11,7 @@ export function Personal() {
     visible: {
       opacity: 1,
       y: 0,
-      transition: { delay: 1.5, duration: 1.8 },
+      transition: { delay: 0.3, duration: 1.5 },
     },
     hover: {
       scale: 1.1,

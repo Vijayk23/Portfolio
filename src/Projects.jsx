@@ -72,7 +72,7 @@ export function Projects() {
     animate: {
       opacity: 1,
       x: 0,
-      transition: { delay: 1.5, duration: 1.6 },
+      transition: { delay: 0.3, duration: 1.5 },
     },
   };
 
@@ -115,7 +115,7 @@ function Project({ proj }) {
     animate: {
       opacity: 1,
       rotate: 0,
-      transition: { delay: 1.5, duration: 1.8 },
+      transition: { delay: 0.3, duration: 1.5 },
     },
   };
   const card1 = {
@@ -126,7 +126,7 @@ function Project({ proj }) {
     animate: {
       opacity: 1,
       y: 0,
-      transition: { delay: 1.5, duration: 1.8 },
+      transition: { delay: 0.3, duration: 1.5 },
     },
   };
   return (

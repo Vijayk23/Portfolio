@@ -9,7 +9,7 @@ export function Contact() {
     visible: {
       opacity: 1,
       x: 0,
-      transition: { delay: 2.5, duration: 2.9 },
+      transition: { delay: 0.9, duration: 1.5 },
     },
   };
   const dev1 = {
@@ -20,7 +20,7 @@ export function Contact() {
     visible: {
       opacity: 1,
       y: 0,
-      transition: { delay: 1.9, duration: 2.0 },
+      transition: { delay: 0.5, duration: 1.5 },
     },
   };
   const d1 = {
@@ -30,7 +30,7 @@ export function Contact() {
     visible: {
       opacity: 1,
 
-      transition: { delay: 1.5, duration: 1.5 },
+      transition: { delay: 0.3, duration: 1.5 },
     },
   };
   return (

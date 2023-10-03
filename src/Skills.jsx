@@ -10,7 +10,7 @@ export function Skills() {
     animate: {
       opacity: 1,
       x: 0,
-      transition: { delay: 1.5, duration: 2 },
+      transition: { delay: 0.3, duration: 1.5 },
     },
   };
   const para = {
@@ -21,7 +21,7 @@ export function Skills() {
     animate: {
       opacity: 1,
       y: 0,
-      transition: { delay: 1.5, duration: 2 },
+      transition: { delay: 0.3, duration: 1.5 },
     },
   };
   const skill = {

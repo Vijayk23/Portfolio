@@ -5,12 +5,12 @@ export function Expedu() {
   const head = {
     hidden: {
       opacity: 0,
-      x: "-15vw",
+      x: "-11.5vw",
     },
     visible: {
       opacity: 1,
       x: 0,
-      transition: { delay: 1.5, duration: 1.8 },
+      transition: { delay: 0.3, duration: 1.5 },
     },
   };
 
@@ -32,7 +32,7 @@ export function Expedu() {
   ];
   const education = [
     {
-      year: "2015 - 2019",
+      year: "2011.5 - 2019",
       institution: "SKP  COLLEGE - ",
       field: "MECHANICAL ENGINNERING ",
       description:
@@ -86,7 +86,7 @@ function Experien({ exper }) {
     animate: {
       opacity: 1,
       y: 0,
-      transition: { delay: 1.5, duration: 1.8 },
+      transition: { delay: 0.3, duration: 1.5 },
     },
   };
   const cardcont = {
@@ -97,7 +97,7 @@ function Experien({ exper }) {
     animate: {
       opacity: 1,
       y: 0,
-      transition: { delay: 1.5, duration: 1.8 },
+      transition: { delay: 0.3, duration: 1.5 },
     },
   };
 
@@ -145,7 +145,7 @@ function Exduca({ educ }) {
     animate: {
       opacity: 1,
       y: 0,
-      transition: { delay: 1.5, duration: 1.8 },
+      transition: { delay: 0.3, duration: 1.5 },
     },
   };
   const cardcont = {
@@ -156,7 +156,7 @@ function Exduca({ educ }) {
     animate: {
       opacity: 1,
       y: 0,
-      transition: { delay: 1.5, duration: 1.8 },
+      transition: { delay: 0.3, duration: 1.5 },
     },
   };
   return (
