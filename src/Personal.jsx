@@ -39,7 +39,7 @@ export function Personal() {
       <div className="personal">
         <motion.section>
           <div className="per-flex">
-            <motion.span variants={personal} initial="hidden" animate="visible">
+            <motion.span>
               <h2>PERSONAL INFOS</h2>
               <p>
                 NAME: <span>VIJAY KUMAR </span>
