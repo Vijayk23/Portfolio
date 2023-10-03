@@ -33,7 +33,7 @@ export function Skills() {
       opacity: 1,
       rotate: 0,
       transition: {
-        delay: 1.5,
+        delay: 0.3,
         duration: 2,
       },
     },
