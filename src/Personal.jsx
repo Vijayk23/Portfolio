@@ -33,22 +33,11 @@ export function Personal() {
       },
     },
   };
-  const section = {
-    hidden: {
-      opacity: 0,
-      y: "200vw",
-    },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: { delay: 4.5, duration: 4.8 },
-    },
-  };
 
   return (
     <>
       <div className="personal">
-        <motion.section variants={section} initial="hidden" animate="visible">
+        <motion.section>
           <div className="per-flex">
             <motion.span variants={personal} initial="hidden" animate="visible">
               <h2>PERSONAL INFOS</h2>
