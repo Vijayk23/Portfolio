@@ -67,12 +67,12 @@ export function Projects() {
   const head = {
     initial: {
       opacity: 0,
-      x: "-200vw",
+      x: "-90vw",
     },
     animate: {
       opacity: 1,
       x: 0,
-      transition: { delay: 5.9, duration: 6.2 },
+      transition: { delay: 1.5, duration: 1.6 },
     },
   };
 
@@ -82,8 +82,7 @@ export function Projects() {
         <motion.h3
           variants={head}
           initial="initial"
-          animate="animate"
-          viewport={{ once: true }}
+          whileInView="animate"
           className="proj-title"
         >
           Explore a collection of personally developed projects showcased here.
@@ -116,18 +115,18 @@ function Project({ proj }) {
     animate: {
       opacity: 1,
       rotate: 0,
-      transition: { delay: 5.9, duration: 6.2 },
+      transition: { delay: 1.5, duration: 1.8 },
     },
   };
   const card1 = {
     initial: {
       opacity: 0,
-      y: "200vw",
+      y: "5vw",
     },
     animate: {
       opacity: 1,
       y: 0,
-      transition: { delay: 5.9, duration: 6.2 },
+      transition: { delay: 1.5, duration: 1.8 },
     },
   };
   return (
@@ -135,15 +134,13 @@ function Project({ proj }) {
       <motion.div
         variants={card1}
         initial="initial"
-        animate="animate"
-        viewport={{ once: true }}
+        whileInView="animate"
         className="project-conatiner"
       >
         <motion.img
           variants={img}
           initial="initial"
-          animate="animate"
-          viewport={{ once: true }}
+          whileInView="animate"
           src={proj.pic}
           className="project-img"
         />
@@ -152,7 +149,6 @@ function Project({ proj }) {
         <a href={proj.url} target="_blank" className="projectbutton">
           <motion.button
             whileHover={{ scale: 1.05 }}
-            viewport={{ once: true }}
             className="project-button"
           >
             LIVE URL

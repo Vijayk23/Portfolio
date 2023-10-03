@@ -4,23 +4,23 @@ export function Contact() {
   const dev = {
     hidden: {
       opacity: 0,
-      x: "-200vw",
+      x: "-90vw",
     },
     visible: {
       opacity: 1,
       x: 0,
-      transition: { delay: 7.5, duration: 7.9 },
+      transition: { delay: 2.5, duration: 2.9 },
     },
   };
   const dev1 = {
     hidden: {
       opacity: 0,
-      y: "200vw",
+      y: "10vw",
     },
     visible: {
       opacity: 1,
       y: 0,
-      transition: { delay: 6.5, duration: 6.9 },
+      transition: { delay: 1.9, duration: 2.0 },
     },
   };
   const d1 = {
@@ -30,7 +30,7 @@ export function Contact() {
     visible: {
       opacity: 1,
 
-      transition: { delay: 6.5, duration: 6.9 },
+      transition: { delay: 1.5, duration: 1.5 },
     },
   };
   return (
@@ -39,10 +39,9 @@ export function Contact() {
         className="contact"
         variants={d1}
         initial="hidden"
-        animate="visible"
-        viewport={{ once: true }}
+        whileInView="visible"
       >
-        <motion.span variants={dev1} initial="hidden" animate="visible">
+        <motion.span variants={dev1} initial="hidden" whileInView="visible">
           <h2>DON'T BE SHY !</h2>
           <p className="cont-para">
             Feel free to get in touch with me. I am always open to discussing
@@ -71,12 +70,7 @@ export function Contact() {
             <p className="contact-line">+91 701 099 3660</p>
           </div>
         </motion.span>
-        <motion.div
-          variants={dev}
-          initial="hidden"
-          animate="visible"
-          viewport={{ once: true }}
-        >
+        <motion.div variants={dev} initial="hidden" whileInView="visible">
           <form className="form">
             <h4>Contact Me</h4>
             <input type="text" placeholder="Full Name*" required />

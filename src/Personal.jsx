@@ -3,26 +3,15 @@ import { Projects } from "./Projects";
 import { motion } from "framer-motion";
 
 export function Personal() {
-  const personal = {
-    hidden: {
-      opacity: 0,
-      x: "-200vw",
-    },
-    visible: {
-      opacity: 1,
-      x: 0,
-      transition: { delay: 4.5, duration: 4.8 },
-    },
-  };
   const personalbutton = {
     hidden: {
       opacity: 0,
-      y: "-200vw",
+      y: "-10vw",
     },
     visible: {
       opacity: 1,
       y: 0,
-      transition: { delay: 4.5, duration: 4.8 },
+      transition: { delay: 1.5, duration: 1.8 },
     },
     hover: {
       scale: 1.1,
@@ -40,32 +29,61 @@ export function Personal() {
         <motion.section>
           <div className="per-flex">
             <motion.span>
-              <h2>PERSONAL INFOS</h2>
-              <p>
+              <motion.h2
+                variants={personalbutton}
+                initial="hidden"
+                whileInView="visible"
+              >
+                PERSONAL INFOS
+              </motion.h2>
+              <motion.p
+                variants={personalbutton}
+                initial="hidden"
+                whileInView="visible"
+              >
                 NAME: <span>VIJAY KUMAR </span>
-              </p>
-              <p>
+              </motion.p>
+              <motion.p
+                variants={personalbutton}
+                initial="hidden"
+                whileInView="visible"
+              >
                 AGE: <span>25 YEARS OLD </span>
-              </p>
-              <p>
+              </motion.p>
+              <motion.p
+                variants={personalbutton}
+                initial="hidden"
+                whileInView="visible"
+              >
                 FREELANCE: <span>AVAILABLE </span>
-              </p>
-              <p>
+              </motion.p>
+              <motion.p
+                variants={personalbutton}
+                initial="hidden"
+                whileInView="visible"
+              >
                 LANGUAGES: <span>TAMIL, ENGLISH</span>
-              </p>
-              <p>
+              </motion.p>
+              <motion.p
+                variants={personalbutton}
+                initial="hidden"
+                whileInView="visible"
+              >
                 PHONE: <span>7010993660</span>
-              </p>
-              <p>
+              </motion.p>
+              <motion.p
+                variants={personalbutton}
+                initial="hidden"
+                whileInView="visible"
+              >
                 MAIL ID: <span>VIJAYSACHINVIJ23@GMAIL.COM</span>
-              </p>
+              </motion.p>
               <a download href="./images/VIJAY.pdf">
                 <motion.button
                   variants={personalbutton}
                   initial="hidden"
-                  animate="visible"
+                  whileInView="visible"
                   whileHover="hover"
-                  viewport={{ once: true }}
                   className="download-btn"
                 >
                   DOWNLOAD CV ↓

@@ -5,23 +5,23 @@ export function Skills() {
   const head = {
     initial: {
       opacity: 0,
-      x: "-200vw",
+      x: "-20vw",
     },
     animate: {
       opacity: 1,
       x: 0,
-      transition: { delay: 2.3, duration: 2.5 },
+      transition: { delay: 1.5, duration: 2 },
     },
   };
   const para = {
     initial: {
       opacity: 0,
-      y: "100vw",
+      y: "10vw",
     },
     animate: {
       opacity: 1,
       y: 0,
-      transition: { delay: 2.3, duration: 2.5 },
+      transition: { delay: 1.5, duration: 2 },
     },
   };
   const skill = {
@@ -33,7 +33,7 @@ export function Skills() {
       opacity: 1,
       rotate: 0,
       transition: {
-        delay: 3,
+        delay: 1.5,
         duration: 2,
       },
     },
@@ -41,20 +41,10 @@ export function Skills() {
   return (
     <>
       <div className="skills">
-        <motion.h3
-          variants={head}
-          initial="initial"
-          animate="animate"
-          viewport={{ once: true }}
-        >
+        <motion.h3 variants={head} initial="initial" whileInView="animate">
           SKILS & TOOLS
         </motion.h3>
-        <motion.h4
-          variants={para}
-          initial="initial"
-          animate="animate"
-          viewport={{ once: true }}
-        >
+        <motion.h4 variants={para} initial="initial" whileInView="animate">
           I possess a diverse skill set in web development and design, with
           proficiency in HTML, JavaScript, ReactJS, and CSS. My familiarity with
           ReactJS empowers me to build modern and efficient user interfaces,
@@ -64,9 +54,8 @@ export function Skills() {
           <motion.img
             variants={skill}
             initial="initial"
-            animate="animate"
+            whileInView="animate"
             whileHover={{ scale: 1.2 }}
-            viewport={{ once: true }}
             src="./images/html5.png"
             alt="html5"
             className="img"
@@ -74,9 +63,8 @@ export function Skills() {
           <motion.img
             variants={skill}
             initial="initial"
-            animate="animate"
+            whileInView="animate"
             whileHover={{ scale: 1.2 }}
-            viewport={{ once: true }}
             src="./images/css.png"
             alt="css"
             className="img"
@@ -84,9 +72,8 @@ export function Skills() {
           <motion.img
             variants={skill}
             initial="initial"
-            animate="animate"
+            whileInView="animate"
             whileHover={{ scale: 1.2 }}
-            viewport={{ once: true }}
             src="./images/javascript.png"
             alt="javascript"
             className="img"
@@ -94,9 +81,8 @@ export function Skills() {
           <motion.img
             variants={skill}
             initial="initial"
-            animate="animate"
+            whileInView="animate"
             whileHover={{ scale: 1.2 }}
-            viewport={{ once: true }}
             src="./images/react.png"
             alt="react"
             className="img"
@@ -104,9 +90,8 @@ export function Skills() {
           <motion.img
             variants={skill}
             initial="initial"
-            animate="animate"
+            whileInView="animate"
             whileHover={{ scale: 1.2 }}
-            viewport={{ once: true }}
             src="./images/material ui.png"
             alt="material ui"
             className="img"
@@ -114,9 +99,8 @@ export function Skills() {
           <motion.img
             variants={skill}
             initial="initial"
-            animate="animate"
+            whileInView="animate"
             whileHover={{ scale: 1.2 }}
-            viewport={{ once: true }}
             src="./images/figma.png"
             alt="figma"
             className="img"
@@ -124,9 +108,8 @@ export function Skills() {
           <motion.img
             variants={skill}
             initial="initial"
-            animate="animate"
+            whileInView="animate"
             whileHover={{ scale: 1.2 }}
-            viewport={{ once: true }}
             src="./images/github.png"
             alt="github"
             className="img"
@@ -134,9 +117,8 @@ export function Skills() {
           <motion.img
             variants={skill}
             initial="initial"
-            animate="animate"
+            whileInView="animate"
             whileHover={{ scale: 1.2 }}
-            viewport={{ once: true }}
             src="./images/vs code.png"
             alt="vs code"
             className="img"
@@ -144,9 +126,8 @@ export function Skills() {
           <motion.img
             variants={skill}
             initial="initial"
-            animate="animate"
+            whileInView="animate"
             whileHover={{ scale: 1.2 }}
-            viewport={{ once: true }}
             src="./images/google.png"
             alt="google"
             className="img"
@@ -154,9 +135,8 @@ export function Skills() {
           <motion.img
             variants={skill}
             initial="initial"
-            animate="animate"
+            whileInView="animate"
             whileHover={{ scale: 1.2 }}
-            viewport={{ once: true }}
             src="./images/facebook ads.png"
             alt="facebook ads"
             className="img1"
@@ -166,7 +146,6 @@ export function Skills() {
       <motion.hr
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        viewport={{ once: true }}
         transition={{ delay: 0.5, duration: 1.5 }}
       ></motion.hr>
       <Expedu />

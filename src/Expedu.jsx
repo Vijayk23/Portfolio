@@ -5,12 +5,12 @@ export function Expedu() {
   const head = {
     hidden: {
       opacity: 0,
-      x: "-200vw",
+      x: "-15vw",
     },
     visible: {
       opacity: 1,
       x: 0,
-      transition: { delay: 4.3, duration: 2.5 },
+      transition: { delay: 1.5, duration: 1.8 },
     },
   };
 
@@ -53,8 +53,7 @@ export function Expedu() {
           <motion.h3
             variants={head}
             initial="hidden"
-            animate="visible"
-            viewport={{ once: true }}
+            whileInView="visible"
             className="expedu"
           >
             EXPERIENCE & EDUCATION
@@ -82,23 +81,23 @@ function Experien({ exper }) {
   const cardhead = {
     initial: {
       opacity: 0,
-      y: 600,
+      y: 60,
     },
     animate: {
       opacity: 1,
       y: 0,
-      transition: { delay: 4.3, duration: 2.5 },
+      transition: { delay: 1.5, duration: 1.8 },
     },
   };
   const cardcont = {
     initial: {
       opacity: 0,
-      y: -200,
+      y: -20,
     },
     animate: {
       opacity: 1,
       y: 0,
-      transition: { delay: 4.3, duration: 2.5 },
+      transition: { delay: 1.5, duration: 1.8 },
     },
   };
 
@@ -106,14 +105,12 @@ function Experien({ exper }) {
     <div>
       <motion.div
         whileHover={{ scale: 1.02, boxShadow: "0 0 8px #aaaaaa" }}
-        viewport={{ once: true }}
         className="exp-card"
       >
         <motion.div
           variants={cardhead}
           initial="initial"
-          animate="animate"
-          viewport={{ once: true }}
+          whileInView="animate"
           className="exp"
         >
           <img src="./images/work.png" className="workpng" />
@@ -122,8 +119,7 @@ function Experien({ exper }) {
         <motion.p
           variants={cardcont}
           initial="initial"
-          animate="animate"
-          viewport={{ once: true }}
+          whileInView="animate"
           className="exp-company"
         >
           {exper.companyName} <span className="exp-role">{exper.role}</span>
@@ -131,8 +127,7 @@ function Experien({ exper }) {
         <motion.p
           variants={cardcont}
           initial="initial"
-          animate="animate"
-          viewport={{ once: true }}
+          whileInView="animate"
           className="exp-description"
         >
           {exper.description}
@@ -145,37 +140,35 @@ function Exduca({ educ }) {
   const cardhead = {
     initial: {
       opacity: 0,
-      y: 600,
+      y: 60,
     },
     animate: {
       opacity: 1,
       y: 0,
-      transition: { delay: 4.3, duration: 2.5 },
+      transition: { delay: 1.5, duration: 1.8 },
     },
   };
   const cardcont = {
     initial: {
       opacity: 0,
-      y: -200,
+      y: -20,
     },
     animate: {
       opacity: 1,
       y: 0,
-      transition: { delay: 4.3, duration: 2.5 },
+      transition: { delay: 1.5, duration: 1.8 },
     },
   };
   return (
     <div>
       <motion.div
         whileHover={{ scale: 1.02, boxShadow: "0 0 8px #aaaaaa" }}
-        viewport={{ once: true }}
         className="edu-card"
       >
         <motion.div
           variants={cardhead}
           initial="initial"
-          animate="animate"
-          viewport={{ once: true }}
+          whileInView="animate"
           className="edu1"
         >
           <img src="./images/education.png" className="workpng" />
@@ -184,8 +177,7 @@ function Exduca({ educ }) {
         <motion.p
           variants={cardhead}
           initial="initial"
-          animate="animate"
-          viewport={{ once: true }}
+          whileInView="animate"
           className="exp-company"
         >
           {educ.institution} <span className="exp-role">{educ.field}</span>
@@ -193,8 +185,7 @@ function Exduca({ educ }) {
         <motion.p
           variants={cardcont}
           initial="initial"
-          animate="animate"
-          viewport={{ once: true }}
+          whileInView="animate"
           className="edu-description"
         >
           {educ.description}

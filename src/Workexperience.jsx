@@ -48,7 +48,7 @@ function Work({ work }) {
     visible: {
       opacity: 1,
       rotate: 0,
-      transition: { delay: 4.5, duration: 4.8 },
+      transition: { delay: 1.5, duration: 1.8 },
     },
     hover: {
       scale: 1.05,
@@ -60,9 +60,8 @@ function Work({ work }) {
       <motion.div
         variants={workexp}
         initial="hidden"
-        animate="visible"
+        whileInView="visible"
         whileHover="hover"
-        viewport={{ once: true }}
         className="card-container"
       >
         <p id="cardline1">

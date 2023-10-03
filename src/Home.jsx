@@ -5,7 +5,7 @@ export function Home() {
   const dev = {
     hidden: {
       opacity: 0,
-      x: "-200vw",
+      x: "-20vw",
     },
     visible: {
       opacity: 1,
@@ -16,7 +16,7 @@ export function Home() {
   const nam = {
     hidden: {
       opacity: 0,
-      y: "100vw",
+      y: "10vw",
     },
     visible: {
       opacity: 1,
@@ -27,7 +27,7 @@ export function Home() {
   const section = {
     hidden: {
       opacity: 0,
-      y: "-200vw",
+      y: "-20vw",
     },
     visible: {
       opacity: 1,
@@ -35,21 +35,11 @@ export function Home() {
       transition: { delay: 0.2, duration: 1 },
     },
   };
-  const arrow = {
-    hidden: {
-      opacity: 0,
-      y: "-100vw",
-    },
-    visible: {
-      opacity: 1,
-      y: 30,
-      transition: { delay: 0.5, duration: 2 },
-    },
-  };
+
   const vijay = {
     hidden: {
       opacity: 0,
-      y: "-360vw",
+      y: "-20vw",
     },
     visible: {
       opacity: 1,
@@ -65,20 +55,32 @@ export function Home() {
     <>
       <div>
         <motion.div className="home-container">
-          <motion.section variants={section} initial="hidden" animate="visible">
+          <motion.section
+            variants={section}
+            initial="hidden"
+            whileInView="visible"
+          >
             <div className="home">
               <span className="home-content">
-                <motion.h4 variants={nam} initial="hidden" animate="visible">
+                <motion.h4
+                  variants={nam}
+                  initial="hidden"
+                  whileInView="visible"
+                >
                   I'M VIJAY -
                 </motion.h4>
-                <motion.h1 variants={dev} initial="hidden" animate="visible">
+                <motion.h1
+                  variants={dev}
+                  initial="hidden"
+                  whileInView="visible"
+                >
                   WEB DEVELOPER
                 </motion.h1>
                 <motion.p
                   className="home-para"
                   variants={nam}
                   initial="hidden"
-                  animate="visible"
+                  whileInView="visible"
                 >
                   I’m Chennai Based Full Stack Developer & Digital Marketer And
                   Designer Focused on Crafting clean & User‑Friendly
@@ -92,7 +94,7 @@ export function Home() {
                 className="home-dotted"
                 variants={dev}
                 initial="hidden"
-                animate="visible"
+                whileInView="visible"
               />
             </div>
             <div>
@@ -109,7 +111,7 @@ export function Home() {
                 className="vijay"
                 variants={vijay}
                 initial="hidden"
-                animate="visible"
+                whileInView="visible"
                 drag
                 dragConstraints={{ left: 0, right: 0, top: 0, bottom: 0 }}
                 dragElastic={0.8}
