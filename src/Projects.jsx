@@ -1,6 +1,7 @@
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { Contact } from "./Contact";
+import { motion } from "framer-motion";
 
 export function Projects() {
   const responsive = {
@@ -63,13 +64,31 @@ export function Projects() {
         "Explore my journey through innovative projects and skills in my personal portfolio app. Discover my creative world.",
     },
   ];
+  const head = {
+    initial: {
+      opacity: 0,
+      x: "-200vw",
+    },
+    animate: {
+      opacity: 1,
+      x: 0,
+      transition: { delay: 5.9, duration: 6.2 },
+    },
+  };
 
   return (
     <>
       <div className="projects">
-        <h3 className="proj-title">
+        <motion.h3
+          variants={head}
+          initial="initial"
+          animate="animate"
+          viewport={{ once: true }}
+          className="proj-title"
+        >
           Explore a collection of personally developed projects showcased here.
-        </h3>
+        </motion.h3>
+
         <Carousel
           showDots={true}
           swipeable={true}
@@ -89,16 +108,56 @@ export function Projects() {
 }
 
 function Project({ proj }) {
+  const img = {
+    initial: {
+      opacity: 0,
+      rotate: 360,
+    },
+    animate: {
+      opacity: 1,
+      rotate: 0,
+      transition: { delay: 5.9, duration: 6.2 },
+    },
+  };
+  const card1 = {
+    initial: {
+      opacity: 0,
+      y: "200vw",
+    },
+    animate: {
+      opacity: 1,
+      y: 0,
+      transition: { delay: 5.9, duration: 6.2 },
+    },
+  };
   return (
     <>
-      <div className="project-conatiner">
-        <img src={proj.pic} className="project-img" />
+      <motion.div
+        variants={card1}
+        initial="initial"
+        animate="animate"
+        viewport={{ once: true }}
+        className="project-conatiner"
+      >
+        <motion.img
+          variants={img}
+          initial="initial"
+          animate="animate"
+          viewport={{ once: true }}
+          src={proj.pic}
+          className="project-img"
+        />
         <h4 className="project-name">{proj.name}</h4>
         <p className="project-des">{proj.description}</p>
         <a href={proj.url} target="_blank" className="projectbutton">
-          <button className="project-button">LIVE URL</button>
+          <motion.button
+            whileHover={{ scale: 1.05 }}
+            className="project-button"
+          >
+            LIVE URL
+          </motion.button>
         </a>
-      </div>
+      </motion.div>
     </>
   );
 }

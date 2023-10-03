@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 export function Workexperience() {
   const works = [
     {
@@ -39,9 +40,30 @@ export function Workexperience() {
 }
 
 function Work({ work }) {
+  const workexp = {
+    hidden: {
+      opacity: 0,
+      rotate: 360,
+    },
+    visible: {
+      opacity: 1,
+      rotate: 0,
+      transition: { delay: 4.5, duration: 4.8 },
+    },
+    hover: {
+      scale: 1.05,
+      boxShadow: "0 0 8px rgb(255, 255, 255)",
+    },
+  };
   return (
     <>
-      <div className="card-container">
+      <motion.div
+        variants={workexp}
+        initial="hidden"
+        animate="visible"
+        whileHover="hover"
+        className="card-container"
+      >
         <p id="cardline1">
           {work.num}
           <sup>{work.plus}</sup>
@@ -50,7 +72,7 @@ function Work({ work }) {
           <p> {work.title1}</p>
           <p> {work.title2}</p>
         </div>
-      </div>
+      </motion.div>
     </>
   );
 }

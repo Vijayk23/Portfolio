@@ -32,8 +32,6 @@
     margin-top: 20px;
 
 }
-
-
  section{
     position: relative;
     width: 85%;
@@ -269,7 +267,7 @@ gap: 60px;
     display: flex;
     gap: 20px;
     align-items: center;
-    background-color: #D4FEF7;
+    background-color: rgb(212, 254, 247);
     border-radius: 20px;
     color: #05004A;
     font-weight: 600;

@@ -1,6 +1,19 @@
 import { Personal } from "./Personal";
+import { motion } from "framer-motion";
 
 export function Expedu() {
+  const head = {
+    hidden: {
+      opacity: 0,
+      x: "-200vw",
+    },
+    visible: {
+      opacity: 1,
+      x: 0,
+      transition: { delay: 4.3, duration: 2.5 },
+    },
+  };
+
   const experience = [
     {
       year: "2021 - PRESENT",
@@ -37,7 +50,15 @@ export function Expedu() {
     <>
       <div className="exp-edu">
         <div>
-          <h3 className="expedu">EXPERIENCE & EDUCATION</h3>
+          <motion.h3
+            variants={head}
+            initial="hidden"
+            animate="visible"
+            viewport={{ once: true }}
+            className="expedu"
+          >
+            EXPERIENCE & EDUCATION
+          </motion.h3>
         </div>
         <div className="exp1">
           {experience.map((exp) => (
@@ -58,34 +79,125 @@ export function Expedu() {
 }
 
 function Experien({ exper }) {
+  const cardhead = {
+    initial: {
+      opacity: 0,
+      y: 600,
+    },
+    animate: {
+      opacity: 1,
+      y: 0,
+      transition: { delay: 4.3, duration: 2.5 },
+    },
+  };
+  const cardcont = {
+    initial: {
+      opacity: 0,
+      y: -200,
+    },
+    animate: {
+      opacity: 1,
+      y: 0,
+      transition: { delay: 4.3, duration: 2.5 },
+    },
+  };
+
   return (
     <div>
-      <div className="exp-card">
-        <div className="exp">
+      <motion.div
+        whileHover={{ scale: 1.02, boxShadow: "0 0 8px #aaaaaa" }}
+        className="exp-card"
+      >
+        <motion.div
+          variants={cardhead}
+          initial="initial"
+          animate="animate"
+          viewport={{ once: true }}
+          className="exp"
+        >
           <img src="./images/work.png" className="workpng" />
           <p className="exp-year">{exper.year} </p>
-        </div>
-        <p className="exp-company">
+        </motion.div>
+        <motion.p
+          variants={cardcont}
+          initial="initial"
+          animate="animate"
+          viewport={{ once: true }}
+          className="exp-company"
+        >
           {exper.companyName} <span className="exp-role">{exper.role}</span>
-        </p>
-        <p className="exp-description">{exper.description}</p>
-      </div>
+        </motion.p>
+        <motion.p
+          variants={cardcont}
+          initial="initial"
+          animate="animate"
+          viewport={{ once: true }}
+          className="exp-description"
+        >
+          {exper.description}
+        </motion.p>
+      </motion.div>
     </div>
   );
 }
 function Exduca({ educ }) {
+  const cardhead = {
+    initial: {
+      opacity: 0,
+      y: 600,
+    },
+    animate: {
+      opacity: 1,
+      y: 0,
+      transition: { delay: 4.3, duration: 2.5 },
+    },
+  };
+  const cardcont = {
+    initial: {
+      opacity: 0,
+      y: -200,
+    },
+    animate: {
+      opacity: 1,
+      y: 0,
+      transition: { delay: 4.3, duration: 2.5 },
+    },
+  };
   return (
     <div>
-      <div className="edu-card">
-        <div className="edu1">
+      <motion.div
+        whileHover={{ scale: 1.02, boxShadow: "0 0 8px #aaaaaa" }}
+        className="edu-card"
+      >
+        <motion.div
+          variants={cardhead}
+          initial="initial"
+          animate="animate"
+          viewport={{ once: true }}
+          className="edu1"
+        >
           <img src="./images/education.png" className="workpng" />
           <p className="edu1-year">{educ.year}</p>
-        </div>
-        <p className="exp-company">
+        </motion.div>
+        <motion.p
+          variants={cardhead}
+          initial="initial"
+          animate="animate"
+          viewport={{ once: true }}
+          className="exp-company"
+        >
           {educ.institution} <span className="exp-role">{educ.field}</span>
-        </p>
-        <p className="edu-description">{educ.description}</p>
-      </div>
+        </motion.p>
+        <motion.p
+          variants={cardcont}
+          initial="initial"
+          animate="animate"
+          viewport={{ once: true }}
+          className="edu-description"
+        >
+          {educ.description}
+        </motion.p>
+      </motion.div>
     </div>
   );
 }
