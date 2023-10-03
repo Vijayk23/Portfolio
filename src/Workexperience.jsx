@@ -62,6 +62,7 @@ function Work({ work }) {
         initial="hidden"
         animate="visible"
         whileHover="hover"
+        viewport={{ once: true }}
         className="card-container"
       >
         <p id="cardline1">

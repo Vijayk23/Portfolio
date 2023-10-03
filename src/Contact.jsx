@@ -40,6 +40,7 @@ export function Contact() {
         variants={d1}
         initial="hidden"
         animate="visible"
+        viewport={{ once: true }}
       >
         <motion.span variants={dev1} initial="hidden" animate="visible">
           <h2>DON'T BE SHY !</h2>
@@ -70,7 +71,12 @@ export function Contact() {
             <p className="contact-line">+91 701 099 3660</p>
           </div>
         </motion.span>
-        <motion.div variants={dev} initial="hidden" animate="visible">
+        <motion.div
+          variants={dev}
+          initial="hidden"
+          animate="visible"
+          viewport={{ once: true }}
+        >
           <form className="form">
             <h4>Contact Me</h4>
             <input type="text" placeholder="Full Name*" required />

@@ -65,6 +65,7 @@ export function Personal() {
                   initial="hidden"
                   animate="visible"
                   whileHover="hover"
+                  viewport={{ once: true }}
                   className="download-btn"
                 >
                   DOWNLOAD CV ↓

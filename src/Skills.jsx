@@ -166,6 +166,7 @@ export function Skills() {
       <motion.hr
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
+        viewport={{ once: true }}
         transition={{ delay: 0.5, duration: 1.5 }}
       ></motion.hr>
       <Expedu />

@@ -106,6 +106,7 @@ function Experien({ exper }) {
     <div>
       <motion.div
         whileHover={{ scale: 1.02, boxShadow: "0 0 8px #aaaaaa" }}
+        viewport={{ once: true }}
         className="exp-card"
       >
         <motion.div
@@ -167,6 +168,7 @@ function Exduca({ educ }) {
     <div>
       <motion.div
         whileHover={{ scale: 1.02, boxShadow: "0 0 8px #aaaaaa" }}
+        viewport={{ once: true }}
         className="edu-card"
       >
         <motion.div

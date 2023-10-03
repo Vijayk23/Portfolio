@@ -152,6 +152,7 @@ function Project({ proj }) {
         <a href={proj.url} target="_blank" className="projectbutton">
           <motion.button
             whileHover={{ scale: 1.05 }}
+            viewport={{ once: true }}
             className="project-button"
           >
             LIVE URL
