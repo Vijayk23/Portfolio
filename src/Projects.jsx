@@ -64,27 +64,11 @@ export function Projects() {
         "Explore my journey through innovative projects and skills in my personal portfolio app. Discover my creative world.",
     },
   ];
-  const head = {
-    initial: {
-      opacity: 0,
-      x: "-90vw",
-    },
-    animate: {
-      opacity: 1,
-      x: 0,
-      transition: { delay: 0.3, duration: 1.5 },
-    },
-  };
 
   return (
     <>
       <div className="projects">
-        <motion.h3
-          variants={head}
-          initial="initial"
-          whileInView="animate"
-          className="proj-title"
-        >
+        <motion.h3 className="proj-title">
           Explore a collection of personally developed projects showcased here.
         </motion.h3>
 
@@ -110,7 +94,7 @@ function Project({ proj }) {
   const img = {
     initial: {
       opacity: 0,
-      rotate: 360,
+      rotate: 2,
     },
     animate: {
       opacity: 1,
@@ -135,6 +119,7 @@ function Project({ proj }) {
         variants={card1}
         initial="initial"
         whileInView="animate"
+        viewport={{ once: true }}
         className="project-conatiner"
       >
         <motion.img

@@ -13,21 +13,10 @@ export function Skills() {
       transition: { delay: 0.3, duration: 1.5 },
     },
   };
-  const para = {
-    initial: {
-      opacity: 0,
-      y: "10vw",
-    },
-    animate: {
-      opacity: 1,
-      y: 0,
-      transition: { delay: 0.3, duration: 1.5 },
-    },
-  };
   const skill = {
     initial: {
       opacity: 0,
-      rotate: 360,
+      rotate: 6,
     },
     animate: {
       opacity: 1,
@@ -41,10 +30,15 @@ export function Skills() {
   return (
     <>
       <div className="skills">
-        <motion.h3 variants={head} initial="initial" whileInView="animate">
+        <motion.h3
+          variants={head}
+          initial="initial"
+          whileInView="animate"
+          viewport={{ once: true }}
+        >
           SKILS & TOOLS
         </motion.h3>
-        <motion.h4 variants={para} initial="initial" whileInView="animate">
+        <motion.h4>
           I possess a diverse skill set in web development and design, with
           proficiency in HTML, JavaScript, ReactJS, and CSS. My familiarity with
           ReactJS empowers me to build modern and efficient user interfaces,

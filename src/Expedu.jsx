@@ -54,6 +54,7 @@ export function Expedu() {
             variants={head}
             initial="hidden"
             whileInView="visible"
+            viewport={{ once: true }}
             className="expedu"
           >
             EXPERIENCE & EDUCATION
@@ -89,17 +90,6 @@ function Experien({ exper }) {
       transition: { delay: 0.3, duration: 1.5 },
     },
   };
-  const cardcont = {
-    initial: {
-      opacity: 0,
-      y: -20,
-    },
-    animate: {
-      opacity: 1,
-      y: 0,
-      transition: { delay: 0.3, duration: 1.5 },
-    },
-  };
 
   return (
     <div>
@@ -111,43 +101,21 @@ function Experien({ exper }) {
           variants={cardhead}
           initial="initial"
           whileInView="animate"
+          viewport={{ once: true }}
           className="exp"
         >
           <img src="./images/work.png" className="workpng" />
           <p className="exp-year">{exper.year} </p>
         </motion.div>
-        <motion.p
-          variants={cardcont}
-          initial="initial"
-          whileInView="animate"
-          className="exp-company"
-        >
+        <motion.p className="exp-company">
           {exper.companyName} <span className="exp-role">{exper.role}</span>
         </motion.p>
-        <motion.p
-          variants={cardcont}
-          initial="initial"
-          whileInView="animate"
-          className="exp-description"
-        >
-          {exper.description}
-        </motion.p>
+        <motion.p className="exp-description">{exper.description}</motion.p>
       </motion.div>
     </div>
   );
 }
 function Exduca({ educ }) {
-  const cardhead = {
-    initial: {
-      opacity: 0,
-      y: 60,
-    },
-    animate: {
-      opacity: 1,
-      y: 0,
-      transition: { delay: 0.3, duration: 1.5 },
-    },
-  };
   const cardcont = {
     initial: {
       opacity: 0,
@@ -165,27 +133,18 @@ function Exduca({ educ }) {
         whileHover={{ scale: 1.02, boxShadow: "0 0 8px #aaaaaa" }}
         className="edu-card"
       >
-        <motion.div
-          variants={cardhead}
-          initial="initial"
-          whileInView="animate"
-          className="edu1"
-        >
+        <motion.div className="edu1">
           <img src="./images/education.png" className="workpng" />
           <p className="edu1-year">{educ.year}</p>
         </motion.div>
-        <motion.p
-          variants={cardhead}
-          initial="initial"
-          whileInView="animate"
-          className="exp-company"
-        >
+        <motion.p className="exp-company">
           {educ.institution} <span className="exp-role">{educ.field}</span>
         </motion.p>
         <motion.p
           variants={cardcont}
           initial="initial"
           whileInView="animate"
+          viewport={{ once: true }}
           className="edu-description"
         >
           {educ.description}

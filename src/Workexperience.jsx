@@ -43,7 +43,7 @@ function Work({ work }) {
   const workexp = {
     hidden: {
       opacity: 0,
-      rotate: 360,
+      rotate: 5,
     },
     visible: {
       opacity: 1,

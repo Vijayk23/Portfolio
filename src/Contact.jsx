@@ -41,7 +41,12 @@ export function Contact() {
         initial="hidden"
         whileInView="visible"
       >
-        <motion.span variants={dev1} initial="hidden" whileInView="visible">
+        <motion.span
+          variants={dev1}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+        >
           <h2>DON'T BE SHY !</h2>
           <p className="cont-para">
             Feel free to get in touch with me. I am always open to discussing

@@ -6,7 +6,7 @@ export function Personal() {
   const personalbutton = {
     hidden: {
       opacity: 0,
-      y: "-10vw",
+      y: "-5vw",
     },
     visible: {
       opacity: 1,
@@ -26,58 +26,31 @@ export function Personal() {
   return (
     <>
       <div className="personal">
-        <motion.section>
+        <section>
           <div className="per-flex">
-            <motion.span>
-              <motion.h2
-                variants={personalbutton}
-                initial="hidden"
-                whileInView="visible"
-              >
-                PERSONAL INFOS
-              </motion.h2>
-              <motion.p
-                variants={personalbutton}
-                initial="hidden"
-                whileInView="visible"
-              >
-                NAME: <span>VIJAY KUMAR </span>
-              </motion.p>
-              <motion.p
-                variants={personalbutton}
-                initial="hidden"
-                whileInView="visible"
-              >
+            <span>
+              <h2>PERSONAL INFOS</h2>
+              <p>
+                {" "}
+                NAME: <span>VIJAY KUMAR </span>{" "}
+              </p>
+              <p>
+                {" "}
                 AGE: <span>25 YEARS OLD </span>
-              </motion.p>
-              <motion.p
-                variants={personalbutton}
-                initial="hidden"
-                whileInView="visible"
-              >
+              </p>
+              <p>
+                {" "}
                 FREELANCE: <span>AVAILABLE </span>
-              </motion.p>
-              <motion.p
-                variants={personalbutton}
-                initial="hidden"
-                whileInView="visible"
-              >
+              </p>
+              <p>
                 LANGUAGES: <span>TAMIL, ENGLISH</span>
-              </motion.p>
-              <motion.p
-                variants={personalbutton}
-                initial="hidden"
-                whileInView="visible"
-              >
+              </p>
+              <p>
                 PHONE: <span>7010993660</span>
-              </motion.p>
-              <motion.p
-                variants={personalbutton}
-                initial="hidden"
-                whileInView="visible"
-              >
+              </p>
+              <p>
                 MAIL ID: <span>VIJAYSACHINVIJ23@GMAIL.COM</span>
-              </motion.p>
+              </p>
               <a download href="./images/VIJAY.pdf">
                 <motion.button
                   variants={personalbutton}
@@ -95,12 +68,12 @@ export function Personal() {
                 alt="dotted image"
                 className="home-dotted"
               />
-            </motion.span>
+            </span>
             <div>
               <Workexperience />{" "}
             </div>
           </div>
-        </motion.section>
+        </section>
       </div>
       <hr></hr>
       <Projects />
