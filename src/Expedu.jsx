@@ -32,7 +32,7 @@ export function Expedu() {
   ];
   const education = [
     {
-      year: "2011.5 - 2019",
+      year: "2015 - 2019",
       institution: "SKP  COLLEGE - ",
       field: "MECHANICAL ENGINNERING ",
       description:
