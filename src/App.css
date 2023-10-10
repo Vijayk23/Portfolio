@@ -212,8 +212,7 @@ hr{
         align-items: center;
         gap: 60px;
         flex-wrap: wrap;
-        max-width: 100%;
-        margin:  5% 5%  5% 10%;
+        margin:  5% 0  5% 10%;
     
     }
     .img{
