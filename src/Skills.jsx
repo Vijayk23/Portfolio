@@ -122,6 +122,15 @@ export function Skills() {
             initial="initial"
             whileInView="animate"
             whileHover={{ scale: 1.2 }}
+            src="./images/MySQL.png"
+            alt="MySQL"
+            className="img"
+          />
+          <motion.img
+            variants={skill}
+            initial="initial"
+            whileInView="animate"
+            whileHover={{ scale: 1.2 }}
             src="./images/google.png"
             alt="google"
             className="img"
