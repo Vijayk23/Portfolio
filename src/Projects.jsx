@@ -28,6 +28,13 @@ export function Projects() {
   };
   const projects = [
     {
+      pic: "./images/ott.png",
+      name: "OTT - Developing...",
+      url: "https://ottclone2.netlify.app/",
+      description:
+        "An innovative OTT web app clone, offering a seamless streaming experience with a vast library of content.",
+    },
+    {
       pic: "./images/Todo-list.png",
       name: "TODO-LIST",
       url: "https://vijayk23.github.io/Todolist/",
