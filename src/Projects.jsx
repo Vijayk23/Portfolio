@@ -28,6 +28,13 @@ export function Projects() {
   };
   const projects = [
     {
+      pic: "./images/Assignment.png",
+      name: "Dashboard",
+      url: "https://dashboardtemplate2.netlify.app/",
+      description:
+        "I've developed a sleek ReactJS dashboard homepage, offering an intuitive and dynamic user interface for efficient data visualization and management.",
+    },
+    {
       pic: "./images/ott.png",
       name: "OTT - Developing...",
       url: "https://ottclone2.netlify.app/",
