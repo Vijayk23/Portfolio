@@ -28,6 +28,13 @@ export function Projects() {
   };
   const projects = [
     {
+      pic: "./images/Company.png",
+      name: "Company",
+      url: "https://vjcompany.netlify.app/",
+      description:
+        "I developed a sophisticated ReactJS dashboard homepage, providing an intuitive and dynamic user interface for efficient data visualization and management for a service-based company website.",
+    },
+    {
       pic: "./images/Assignment.png",
       name: "Dashboard",
       url: "https://dashboardtemplate2.netlify.app/",
