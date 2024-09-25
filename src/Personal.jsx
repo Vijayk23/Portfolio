@@ -36,7 +36,7 @@ export function Personal() {
               </p>
               <p>
                 {" "}
-                AGE: <span>25 YEARS OLD </span>
+                AGE: <span>2 YEARS OLD </span>
               </p>
               <p>
                 {" "}
@@ -46,12 +46,12 @@ export function Personal() {
                 LANGUAGES: <span>TAMIL, ENGLISH</span>
               </p>
               <p>
-                PHONE: <span>7010993660</span>
+                PHONE: <span>8489992187</span>
               </p>
               <p>
                 MAIL ID: <span>VIJAYSACHINVIJ23@GMAIL.COM</span>
               </p>
-              <a download href="./images/VIJAY.pdf">
+              <a download href="./images/VijayK.pdf">
                 <motion.button
                   variants={personalbutton}
                   initial="hidden"

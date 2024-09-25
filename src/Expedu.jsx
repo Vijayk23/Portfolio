@@ -16,14 +16,14 @@ export function Expedu() {
 
   const experience = [
     {
-      year: "2021 - PRESENT",
-      companyName: "CORRO HEALTHCARE - ",
-      role: "EXECUTIVE RCM CYCLE",
+      year: "2024 - PRESENT",
+      companyName: "Resulticks - ",
+      role: "Associate Software Engineer",
       description:
-        "As a AR Executive Worked On Behalf of Clarkson eyecare Checking Eligibility & Billing patient appointments",
+        "Focused on frontend development using ReactJs. Optimizing UI/UX, and delivering responsive web solutions.",
     },
     {
-      year: "2020 - 2021",
+      year: "2021 - 2023",
       companyName: "OVANTICA - ",
       role: "DIGITAL MARKETING LEAD",
       description:
