@@ -36,7 +36,7 @@ export function Skills() {
           whileInView="animate"
           viewport={{ once: true }}
         >
-          SKILS & TOOLS
+          SKILLS & TOOLS
         </motion.h3>
         <motion.h4>
           I possess a diverse skill set in web development and design, with
