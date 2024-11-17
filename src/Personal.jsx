@@ -36,7 +36,7 @@ export function Personal() {
               </p>
               <p>
                 {" "}
-                AGE: <span>2 YEARS OLD </span>
+                AGE: <span>26 YEARS OLD </span>
               </p>
               <p>
                 {" "}
