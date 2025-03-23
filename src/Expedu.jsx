@@ -24,10 +24,10 @@ export function Expedu() {
     },
     {
       year: "2021 - 2023",
-      companyName: "OVANTICA - ",
-      role: "DIGITAL MARKETING LEAD",
+      companyName: "Coro healthcare - ",
+      role: "Executive RCM cycle",
       description:
-        "As a Lead  I worked  With Google Ads & Facebook Ads & Email-Marketing,  Maintaining Sale Team And Lead Generator",
+        "Evaluated patient eligibility for appointments based on insurance criteria and authorized accordingly.",
     },
   ];
   const education = [
